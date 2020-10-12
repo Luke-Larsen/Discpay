@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Shutting down the bot and wallets"
+#Kill bot
+pkill -f node
+#kill wallets
+cd ~/bot/dogecoin-1.14.2/bin/
+./dogecoin-cli 'stop'
+cd ~/bot/bitcoin-0.20.0/bin/
+./bitcoin-cli 'stop'
+cd ~/bot/DogeCash-5.1.1.6rc99/bin/
+./dogecash-cli 'stop'
+cd ~/bot/litecoin-0.18.1/bin/
+./litecoin-cli 'stop'

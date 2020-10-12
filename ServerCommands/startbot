@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "starting Mysql"
+systemctl start mysql
+echo "starting wallets"
+#Start Wallets
+cd ~/bot/bitcoin-0.20.0/bin/
+./bitcoind -daemon
+cd ~/bot/DogeCash-5.1.1.6rc99/bin/
+./dogecashd -daemon
+cd ~/bot/litecoin-0.18.1/bin/
+./litecoind -daemon
+#Start discpay
+cd ~/bot/Discpay/
+# nohup node discpay.js &
+node discpay.js

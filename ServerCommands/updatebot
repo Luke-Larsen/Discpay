@@ -1,0 +1,10 @@
+#!/bin/bash
+echo 'Kill bot if its online'
+pkill -f node
+rm -r ~/bot/Discpay/
+echo 'Removed Old Discpay'
+cd ~/bot/
+git clone {GethubUrlToCloneFrom}
+echo 'Updated to latest github'
+#Start Bot
+startbot

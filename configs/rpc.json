@@ -1,0 +1,26 @@
+{
+  "btc": {
+    "host":"127.0.0.1",
+    "port": "8332",
+    "username": "bitcoin",
+    "password": ""
+  },
+  "doge": {
+    "host":"127.0.0.1",
+    "port": "22555",
+    "username": "rpcuser",
+    "password": ""
+  },
+  "dogec": {
+    "host":"127.0.0.1",
+    "port": "56740",
+    "username": "rpcuser",
+    "password": ""
+  },
+  "ltc": {
+    "host":"127.0.0.1",
+    "port": "9432",
+    "username": "rpcuser",
+    "password": ""
+  }
+}
